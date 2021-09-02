@@ -9,17 +9,36 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="background-color">
+
+    <!-- search section  -->
+    <h1 class="text-color text-center mt-5">Search Your Book</h1>
+    <div class="input-group mb-3 w-50 mx-auto mt-3">
+        <input id="search-input" type="text" class="form-control" placeholder="search your book"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn button-color" type="button" id="button-addon2">Search</button>
+    </div>
+    <!-- found massage  -->
+    <div id="found" class="text-center mt-5"></div>
+    <!-- error massage -->
+    <div id="error-text" class="text-center fs-5">
+
+        <!--display search result section  -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mt-5 m-auto ">
+        </div>
 
 
 
-    <!-- bootstrap script  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <script src="book.js"></script>
+        <!-- bootstrap script  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+        <script src="book.js"></script>
 </body>
 
 </html>
